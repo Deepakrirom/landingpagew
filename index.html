@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+</head>
+
+<body class="px-4 md:px-11">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-4 m-auto max-w-[900px] h-16 border-b border-gray-200">
+        <!-- Logo -->
+        <h1 class="font-semibold text-xl">Nexcent</h1>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center gap-4">
+            <a class="text-xs font-semibold hover:text-green-600" href="#">Home</a>
+            <a class="text-xs font-semibold hover:text-green-600" href="#">Community</a>
+            <a class="text-xs font-semibold hover:text-green-600" href="#">Features</a>
+            <a class="text-xs font-semibold hover:text-green-600" href="#">Blog</a>
+
+            <button
+                class="group bg-green-500 h-8 px-3 rounded text-xs font-semibold text-white flex items-center gap-1 hover:bg-green-600 transition">
+                Register Now
+                <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-sm">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden flex flex-col gap-3 px-4 py-4 border-b">
+        <a class="text-sm font-semibold hover:text-green-600" href="#">Home</a>
+        <a class="text-sm font-semibold hover:text-green-600" href="#">Community</a>
+        <a class="text-sm font-semibold hover:text-green-600" href="#">Features</a>
+        <a class="text-sm font-semibold hover:text-green-600" href="#">Blog</a>
+
+        <button class="bg-green-500 h-9 rounded text-sm font-semibold text-white">
+            Register Now
+        </button>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="bg-gray-100">
+        <div
+            class="flex flex-col-reverse md:flex-row justify-between items-center gap-6 max-w-[900px] m-auto px-4 py-8">
+
+            <!-- Text Content -->
+            <div class="max-w-[500px] space-y-4 text-center md:text-left">
+                <h1 class="text-2xl md:text-3xl font-semibold">
+                    Lessons and insights <br />
+                    <span class="text-green-500">from 8 years</span>
+                </h1>
+
+                <p class="text-xs text-gray-500">
+                    Where to grow your business as a photographer: site or social media?
+                </p>
+
+                <button
+                    class="bg-green-500 h-8 w-24 text-xs font-semibold text-white rounded hover:bg-green-600 transition">
+                    Register
+                </button>
+            </div>
+
+            <!-- Image -->
+            <div>
+                <img class="w-[200px] md:w-[300px]" src="Programmer-amico.png" alt="Programmer illustration">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-10">
+        <!-- Heading -->
+        <div class="text-center space-y-2 mb-8">
+            <h1 class="text-2xl font-semibold">Our Clients</h1>
+            <p class="text-gray-500 text-xs">
+                We have been working with some Fortune 500+ clients
+            </p>
+        </div>
+
+        <!-- Logos -->
+        <div class="flex flex-wrap justify-center items-center gap-8 max-w-[900px] m-auto px-4">
+
+            <img class="h-12 md:h-16 opacity-70 hover:opacity-100 transition" src="dibag-logo-png.png" alt="Dibag">
+
+            <img class="h-12 md:h-16 opacity-70 hover:opacity-100 transition" src="klingele-papierwerke-logo-png.png"
+                alt="Klingele">
+
+            <img class="h-12 md:h-16 opacity-70 hover:opacity-100 transition" src="raketa-logo-png.png" alt="Raketa">
+
+            <img class="h-12 md:h-16 opacity-70 hover:opacity-100 transition" src="miway-logo-png_seeklogo-651403.png"
+                alt="Miway">
+
+            <img class="h-12 md:h-16 opacity-70 hover:opacity-100 transition" src="prepass-logo-png.png" alt="Prepass">
+
+            <img class="h-12 md:h-16 opacity-70 hover:opacity-100 transition" src="volksbund-deutsch.png"
+                alt="Volksbund">
+        </div>
+    </section>
+
+
+    <section class="mb-10 px-4">
+        <!-- Heading -->
+        <div class="text-center max-w-[600px] m-auto">
+            <h1 class="text-2xl md:text-3xl font-semibold">
+                Manage your entire community <br />
+                in a single system
+            </h1>
+            <p class="text-xs text-gray-500 mt-2">
+                Who is Nexcent suitable for?
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-[900px] m-auto py-10">
+
+            <!-- Card 1 -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                <img class="h-10 mb-6" src="members.avif" alt="">
+                <h2 class="text-lg font-semibold">
+                    Membership <br /> Organisations
+                </h2>
+                <p class="text-xs text-gray-500 mt-3">
+                    Our membership management software provides
+                    full automation of membership renewals and payments.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                <img class="h-10 mb-6" src="home-logo.jpg" alt="">
+                <h2 class="text-lg font-semibold">
+                    National <br /> Associations
+                </h2>
+                <p class="text-xs text-gray-500 mt-3">
+                    Our membership management software provides
+                    full automation of membership renewals and payments.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                <img class="h-10 mb-6" src="club.png" alt="">
+                <h2 class="text-lg font-semibold">
+                    Clubs And <br /> Groups
+                </h2>
+                <p class="text-xs text-gray-500 mt-3">
+                    Our membership management software provides
+                    full automation of membership renewals and payments.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-10 px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-[900px] m-auto">
+
+            <!-- Image -->
+            <img class="h-[200px] md:h-[250px]" src="Server-amico.png" alt="Server illustration">
+
+            <!-- Content -->
+            <div class="max-w-[450px] text-center md:text-left">
+                <h1 class="text-xl md:text-2xl font-semibold mb-3">
+                    The unseen of spending three <br />
+                    years at Pixelgrade
+                </h1>
+
+                <p class="text-xs text-gray-500 mb-4 leading-relaxed">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+                    a odio, possimus error recusandae deserunt ad,
+                    labore dolor quidem quod porro libero velit amet
+                    laboriosam eos voluptatibus commodi. Consectetur est alias ab dicta fuga
+                    repudiandae totam exercitationem asperiores reprehenderit a?
+                </p>
+
+                <a href="#"
+                    class="inline-block bg-green-500 text-xs font-semibold text-white py-2 px-4 rounded hover:bg-green-600 transition">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="bg-gray-100 py-10">
+        <div class="max-w-[900px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+
+            <!-- Left Content -->
+            <div class="text-center md:text-left">
+                <h1 class="text-2xl md:text-2xl font-semibold leading-tight">
+                    Helping a local <br />
+                    <span class="text-green-500">business reinvent itself</span>
+                </h1>
+                <p class="text-gray-600 mt-2 text-xs">
+                    We reached here with our hard work and dedication
+                </p>
+            </div>
+
+            <!-- Right Stats -->
+            <div class="grid grid-cols-2 gap-6">
+
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-users text-green-500 text-xl"></i>
+                    <div>
+                        <h2 class="font-semibold text-sm">2,245,341</h2>
+                        <p class="text-xs text-gray-600">Members</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-group-arrows-rotate text-green-500 text-xl"></i>
+                    <div>
+                        <h2 class="font-semibold text-sm">46,328</h2>
+                        <p class="text-xs text-gray-600">Clubs</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-hand text-green-500 text-xl"></i>
+                    <div>
+                        <h2 class="font-semibold text-sm">888,321</h2>
+                        <p class="text-xs text-gray-600">Event Bookings</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center  gap-3">
+                    <i class="fa-solid fa-bookmark text-green-500 text-xl"></i>
+                    <div>
+                        <h2 class="font-semibold text-sm">1,999,321</h2>
+                        <p class="text-xs text-gray-600">Payments</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 px-4 bg-gray-50">
+        <div class="flex flex-col md:flex-row-reverse justify-between items-center gap-8 max-w-[900px] m-auto">
+
+            <!-- Image -->
+            <img class="h-[200px] md:h-[250px]" src="Prototyping process-amico.png" alt="Prototyping illustration">
+
+            <!-- Content -->
+            <div class="max-w-[450px] text-center md:text-left">
+                <h1 class="text-xl md:text-2xl font-semibold mb-3">
+                    How to design your site footer like <br /> we did
+                </h1>
+
+                <p class="text-xs text-gray-500 mb-4 leading-relaxed">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+                    a odio, possimus error recusandae deserunt ad,
+                    labore dolor quidem quod porro libero velit amet
+                    laboriosam eos voluptatibus commodi. Consectetur est alias ab dicta fuga
+                    repudiandae totam exercitationem asperiores reprehenderit a?
+                </p>
+
+                <a href="#"
+                    class="inline-block bg-green-500 text-xs font-semibold text-white py-2 px-4 rounded hover:bg-green-600 transition">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-[900px] mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+
+            <!-- Image -->
+            <img class="h-[220px] w-[220px] object-contain rounded-lg shadow-sm" src="Firmware-amico.png"
+                alt="Customer illustration" />
+
+            <!-- Content -->
+            <div class="max-w-[520px] text-center md:text-left">
+                <p class="text-xs text-gray-500 mb-5 leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nihil quos
+                    eos vitae, dolorem officia corporis nisi ducimus, modi consequatur atque
+                    beatae in quia quisquam. Earum veritatis laudantium fugiat dolore sed quos
+                    quae harum eligendi ducimus. Eos at provident reprehenderit sit ab.
+                </p>
+
+                <h2 class="text-green-500 font-semibold text-sm">Tim Smith</h2>
+                <p class="text-[11px] text-gray-500 mb-4">
+                    British Dragon Boat Racing Association
+                </p>
+
+                <a href="#"
+                    class="inline-flex items-center gap-1 text-green-500 text-sm font-semibold hover:text-green-600 transition">
+                    Meet all customers
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-12 px-4 bg-gray-50">
+        <!-- Heading -->
+        <div class="text-center max-w-[700px] m-auto mb-10">
+            <h1 class="text-xl md:text-2xl font-semibold mb-3">
+                Caring is the new marketing
+            </h1>
+            <p class="text-xs text-gray-500 leading-relaxed">
+                The Nexcent blog is the best place to read about the latest membership
+                insights, trends and more. See who's joining the community, read how our
+                community is increasing membership income and lots more.
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-[900px] m-auto">
+
+            <!-- Card -->
+            <div class="relative rounded-xl shadow-lg bg-white group overflow-hidden">
+                <img src="java.PNG" alt="Blog" class="w-full h-[200px] object-cover" />
+
+                <!-- Overlay -->
+                <div class="absolute left-1/2 -translate-x-1/2 w-[85%] bg-white/95 backdrop-blur-sm rounded-lg p-4
+        transition-all duration-300 -bottom-14 group-hover:-bottom-2">
+
+                    <h2 class="text-xs font-semibold text-gray-600">
+                        Creating Streamlined Safeguarding Processes with OneRen
+                    </h2>
+
+                    <a href="#"
+                        class="mt-2 inline-flex items-center text-xs text-green-500 font-medium hover:text-green-600">
+                        Read more
+                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="relative rounded-xl shadow-lg bg-white group overflow-hidden">
+                <img src="Top-8-Coding.jpg" alt="Blog" class="w-full h-[200px] object-cover" />
+
+                <div class="absolute left-1/2 -translate-x-1/2 w-[85%] bg-white/95 backdrop-blur-sm rounded-lg p-4
+        transition-all duration-300 -bottom-14 group-hover:-bottom-2">
+
+                    <h2 class="text-xs font-semibold text-gray-600">
+                        Creating Streamlined Safeguarding Processes with OneRen
+                    </h2>
+
+                    <a href="#"
+                        class="mt-2 inline-flex items-center text-xs text-green-500 font-medium hover:text-green-600">
+                        Read more
+                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="relative rounded-xl shadow-lg bg-white group overflow-hidden">
+                <img src="macbook.jpg" alt="Blog" class="w-full h-[200px] object-cover" />
+
+                <div class="absolute left-1/2 -translate-x-1/2 w-[85%] bg-white/95 backdrop-blur-sm rounded-lg p-4
+        transition-all duration-300 -bottom-14 group-hover:-bottom-2">
+
+                    <h2 class="text-xs font-semibold text-gray-600">
+                        Creating Streamlined Safeguarding Processes with OneRen
+                    </h2>
+
+                    <a href="#"
+                        class="mt-2 inline-flex items-center text-xs text-green-500 font-medium hover:text-green-600">
+                        Read more
+                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-14 bg-gray-50">
+        <div class="max-w-[700px] m-auto px-4 text-center space-y-4">
+
+            <h1 class="text-2xl md:text-3xl font-semibold">
+                Pellentesque suscipit <br />
+                fringilla libero eu
+            </h1>
+
+            <a href="#" class="inline-flex items-center gap-2 bg-green-500 text-white text-xs font-semibold
+             px-5 py-2 rounded hover:bg-green-600 transition">
+                Get a Demo
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+
+        </div>
+    </section>
+
+
+
+    <footer class="bg-gray-950 text-gray-300">
+        <div class="max-w-[900px] mx-auto px-4 py-10
+           grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+            <!-- Brand -->
+            <div>
+                <h1 class="font-semibold text-xl text-white mb-3">Nexcent</h1>
+                <p class="text-xs leading-relaxed">
+                    Copyright © 2026 <br />
+                    All rights reserved
+                </p>
+
+                <div class="flex gap-3 mt-4">
+                    <a class="text-green-500 hover:text-green-400" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="text-green-500 hover:text-green-400" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="text-green-500 hover:text-green-400" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="text-green-500 hover:text-green-400" href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <div>
+                <h2 class="font-semibold text-sm text-white mb-3">Company</h2>
+                <div class="flex flex-col text-xs space-y-2">
+                    <a href="#" class="hover:text-white">About us</a>
+                    <a href="#" class="hover:text-white">Blog</a>
+                    <a href="#" class="hover:text-white">Contact us</a>
+                    <a href="#" class="hover:text-white">Pricing</a>
+                    <a href="#" class="hover:text-white">Testimonials</a>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div>
+                <h2 class="font-semibold text-sm text-white mb-3">Support</h2>
+                <div class="flex flex-col text-xs space-y-2">
+                    <a href="#" class="hover:text-white">Help Center</a>
+                    <a href="#" class="hover:text-white">Terms of service</a>
+                    <a href="#" class="hover:text-white">Legal</a>
+                    <a href="#" class="hover:text-white">Privacy policy</a>
+                    <a href="#" class="hover:text-white">Status</a>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+                <h2 class="font-semibold text-sm text-white mb-3">Stay up to date</h2>
+
+                <div class="relative">
+                    <input type="email" placeholder="Your email address"
+                        class="w-full text-xs px-3 py-2 rounded bg-white/90 text-gray-700 outline-none" />
+
+                    <i class="fa-solid fa-paper-plane absolute right-3 top-1/2 -translate-y-1/2
+                 text-green-500 text-sm cursor-pointer"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+
+</html>
